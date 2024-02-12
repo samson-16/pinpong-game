@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+   <link rel="stylesheet" href="Home.css">
+   
+</head>
+<body>
+     <h1>Welcome to PingPong </h1>
+    <div class="cont">
+    <h2>Choose Opponent</h2>
+        <button id="com">Computer</button>
+        <button id="Local">Local Multiplayer</button>
+           
+    <button id="help">Help <span>&#63;</span></button>
+    </div>
+    <script>
+         
+document.addEventListener("DOMContentLoaded", function() {
+  //
+  var com= document.getElementById("com");
+  var Local = document.getElementById("Local");
+  var help= document.getElementById("help")
+
+
+  com.onclick = function() {
+    aganistComputer();
+  };
+  
+  function aganistComputer() {
+
+    console.log("Starting the game...");
+    window.open("computer.html", "_self"); 
+    
+  }
+
+   Local.onclick=function(){
+    console.log("Starting the game...");
+    window.open("player.html", "_self"); 
+   };
+
+   help.onclick=function(){
+ window.open("help.html", "_self");
+   }
+
+});
+    </script>
+</body>
+</html>

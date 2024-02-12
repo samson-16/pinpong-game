@@ -1,0 +1,37 @@
+
+body{
+   background-image: url(pingpong.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   margin:0;
+   padding: 0;
+}
+.cont{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 10px;
+}
+
+
+
+h1{
+color: white;
+text-align: center;
+margin: 120px auto;
+}
+
+button{
+width: 150px;
+height: 50px;
+margin: 5px;
+border-radius: 5px;
+cursor: pointer;
+}
+.help{
+text-align: center;
+}
+

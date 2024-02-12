@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(pingpongbackground.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+            
+        }
+        
+        .container {
+            width: 600px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            background-color: #fff;
+            border: 2px solid transparent; 
+            position: relative;
+            transition: border-color 0.3s ease-in-out; 
+        }
+        
+        .container:hover {
+            border-color: #8b0000; 
+        }
+        
+        .glue-effect {
+            position: absolute;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            top: -2px;
+            left: -2px;
+            border: 2px solid #8b0000; 
+            box-shadow: 0 0 20px 5px #8b0000; 
+            transition: box-shadow 0.3s ease-in-out; 
+        }
+        
+        .glue-effect:hover {
+            box-shadow: 0 0 20px 10px #8b0000; 
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+
+        button {
+            padding: 10px 20px;
+            background-color: #8b0000; 
+            color: #fff; 
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out; 
+        }
+        
+        button:hover {
+            background-color: #660000; 
+        }
+        
+        .button-container {
+            margin-left: auto; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Play Ping Pong</h1>
+        <button id="back">back</button>
+       <h2>Objective:</h2>
+       <p>The goal of the game is to score points by hitting the ball past your opponent's paddle.</p>
+   
+       <h2>Play Against the Computer:</h2>
+       <p>Control: Use the computer mouse to move the paddle up and down.</p>
+   
+       <h2>Local Multiplayer:</h2>
+       <p>For Left Player: Use the mouse to move the paddle up and down.</p>
+       <p>For Right Player: Use Arrow Up and Arrow Down keys to move up and down, respectively.</p>
+   
+       <h2>Winning the Game:</h2>
+       <p>The player with the highest score at the end of the game wins.</p>
+    </div>
+    
+    <script>
+        var back=document.getElementById("back")
+      back.onclick=function(){
+        window.open("home.html", "_self");
+      }
+    </script>
+</body>
+</html>
