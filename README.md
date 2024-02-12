@@ -1,5 +1,5 @@
-#Title: pinpong-game
-Group 3
+#Title: pingpong-game
+#Group 3
 Group members
 
 Members’ Name          ID Numbers 
